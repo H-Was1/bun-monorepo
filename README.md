@@ -38,7 +38,7 @@ bun install
 From the root, run:
 
 ```
-bun run dev:next
+bun run web
 ```
 
 This starts the Next.js app in development mode at `http://localhost:3000`.
@@ -48,7 +48,7 @@ This starts the Next.js app in development mode at `http://localhost:3000`.
 From the root, run:
 
 ```
-bun run dev:elysia
+bun run server
 ```
 
 This starts the Elysia server at `http://localhost:3001`.
@@ -61,16 +61,12 @@ In the root `package.json`, the following scripts are configured:
 ```
 "scripts": {
   "dev:next": "bun run --cwd apps/nextjs-app dev",
-  "dev:elysia": "bun run --cwd apps/elysia-app start",
-  "lint": "biome check",
-  "format": "biome format"
+  "dev:elysia": "bun run --cwd apps/elysia-app start"
 }
 ```
 
 - `dev:next` - run Next.js frontend
 - `dev:elysia` - run Elysia backend
-- `lint` - check code with Biome linter
-- `format` - format code with Biome formatter
 
 ## Code Quality with Biome
 
