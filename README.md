@@ -53,9 +53,6 @@ bun run dev:elysia
 
 This starts the Elysia server at `http://localhost:3001`.
 
-### Running Elysia UDP server
-
-The Elysia app also runs a UDP server on port 41234 alongside HTTP APIs.
 
 ## Scripts
 
@@ -86,7 +83,6 @@ Biome is used as the integrated linter and formatter for consistent code quality
 
 - This monorepo uses Bun workspaces to share a single `node_modules` across multiple projects.
 - Next.js may show a warning about workspace root; consider setting `outputFileTracingRoot` in `next.config.js` to resolve it.
-- The UDP server on `elysia-app` listens on port 41234 alongside HTTP APIs on port 3001.
 
 ## Resources
 
