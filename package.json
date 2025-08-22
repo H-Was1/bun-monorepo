@@ -1,0 +1,26 @@
+{
+  "name": "raspberry-monorepo",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4",
+    "@biomejs/biome": "2.2.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "private": true,
+  "scripts": {
+    "server": "bun run --cwd apps/server dev",
+    "web": "bun run --cwd apps/web dev"
+  },
+  "type": "module",
+  "workspaces": [
+    "apps/*"
+  ],
+  "dependencies": {}
+}
